@@ -1,8 +1,0 @@
-table {
-    background-color: aqua;
-    border-collapse: collapse;
-}
-
-td, th {
-    border: solid black 1px;
-}
