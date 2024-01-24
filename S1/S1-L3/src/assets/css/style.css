@@ -45,6 +45,7 @@ h1 {
 article img {
     border-radius: 2%;
     box-shadow: 4px 4px 8px #acacac;
+    width: 100%;
 }
 
 
