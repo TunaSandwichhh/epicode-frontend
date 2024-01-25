@@ -21,7 +21,7 @@ header {
     width: 90%;
     margin: 0 auto;
     margin-top: 3.5em;
-    background-color: rgb(44, 110, 180);
+    background: linear-gradient(to top, rgb(11, 76, 94), rgb(25, 147, 180));
     box-shadow: 4px 4px 8px #161616;
     color: aliceblue;
     overflow: auto;
