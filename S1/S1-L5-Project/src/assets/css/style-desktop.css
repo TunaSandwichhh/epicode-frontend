@@ -1,3 +1,4 @@
+/* ---------- G E N E R A L ----------*/
 body {
     font-size: 1.2rem;
     line-height: 1.65;
@@ -16,7 +17,12 @@ div {
     box-sizing: border-box;
     display: inline-block;
 }
+/* ---------- E N D   O F   G E N E R A L ---------- */
 
+
+
+
+/*  ---------- H E A D E R ---------- */
 header {
     background-color: black;
     padding: 3%;
@@ -25,7 +31,13 @@ header {
 header img {
     width: 20%;
 }
+/* ---------- E N D   O F   H E A D E R ----------*/
 
+
+
+
+/* ---------- M A I N  ----------*/
+/* ------- H E R O -------*/
 #hero {
     background-image: url(../img/banner.jpg);
     background-size: cover;
@@ -65,6 +77,10 @@ header img {
     font-size: 0.8em;
 
 }
+/* ------- E N D   O F   H E R O -------*/
+
+
+/* ------- I N F O ------- */
 
 #info {
     padding: 8%;
@@ -74,10 +90,6 @@ header img {
     width: 45%;
     margin-left: 10%;
 }
-
-/* .info-desc {
-    width: 95%;
-} */
 
 .info-desc h3 {
     font-size: 0.9em;
@@ -92,7 +104,10 @@ header img {
     border-radius: 50%;
     overflow: hidden;
 }
+/* ------- E N D   O F   I N F O ------- */
 
+
+/* ------- R E V I E W S ------- */
 #review {
     background-color: #e22d0e;
     color: white;
@@ -119,7 +134,10 @@ cite {
 cite + p {
     margin: 0 0 20px 0;
 }
+/* ------- E N D   O F   R E V I E W S ------- */
 
+
+/* ------- C A R D S ------- */
 #cards {
     padding: 10px
 }
@@ -131,7 +149,6 @@ cite + p {
     text-align: center;
     margin: 0 10px 10% 10px;
 }
-
 
 .card img {
     width: 100%;
@@ -148,6 +165,13 @@ cite + p {
 .card h4 + p {
     margin-bottom: 10%;
 }
+/* ------- E N D   O F   C A R D S ------- */
+/* ---------- E N D   O F   M A I N ----------*/
+
+
+
+/* ---------- F O O T E R ---------- */
+
 
 footer {
     color: #c8e7f0;
