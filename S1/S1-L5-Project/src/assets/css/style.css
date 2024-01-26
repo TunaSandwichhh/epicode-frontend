@@ -48,7 +48,7 @@ header img {
 }
 
 #hero > div {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 10%;
 }
@@ -62,10 +62,11 @@ header img {
     border-radius: 7px;
     box-sizing: border-box;
     display: inline-block;
+    margin: 10px 0 10px 0;
 }
 
 #partiamo p {
-    margin: 15px 25px 15px 25px;
+    margin: 15px 20px 15px 20px;
     font-size: 0.8em;
 }
 /* ------- E N D   O F   H E R O -------*/
