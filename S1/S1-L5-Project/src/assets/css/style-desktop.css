@@ -110,29 +110,30 @@ header img {
 /* ------- R E V I E W S ------- */
 #review {
     background-color: #e22d0e;
-    color: white;
     padding: 3%;
     margin-bottom: 15%;
     text-align: center;
 }
 
-#review h2 {
+#review, #review h2 {
     color: white;
+}
+
+#review h2 {
     font-size: 2em;
     margin-top: 10%;
 }
 
-blockquote {
+blockquote, cite {
     font-size: 1.5em;
 }
 
 cite {
     font-style: normal;
-    font-size: 1.5em;
 }
 
 cite + p {
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
 }
 /* ------- E N D   O F   R E V I E W S ------- */
 
@@ -174,14 +175,12 @@ cite + p {
 
 
 footer {
-    color: #c8e7f0;
     background-color: #25A2C3;
     padding: 10px;
     text-align: center;
 }
 
 footer h2 {
-    color: white;
     font-size: 3em;
     margin: 2%;
 }
@@ -203,11 +202,11 @@ footer > div {
     text-align: left;
 }
 
-footer a:link, footer a:visited {
+footer, footer a:link, footer a:visited {
     color: #c8e7f0;
 }
 
-footer a:hover {
+footer h2, footer a:hover {
     color: white
 }
 
