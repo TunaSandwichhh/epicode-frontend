@@ -2,7 +2,6 @@ body {
     font-size: 1.2rem;
     line-height: 1.65;
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -20,17 +19,18 @@ div {
 
 header {
     background-color: black;
-    padding: 8%;
+    padding: 3%;
 }
 
 header img {
-    width: 40%;
+    width: 20%;
 }
 
 #hero {
     background-image: url(../img/banner.jpg);
     background-size: cover;
     padding: 5%;
+    text-align: center;
 }
 
 #hero h1 {
@@ -38,9 +38,14 @@ header img {
 }
 
 #hero > div {
-    width: 80%;
+    width: 55%;
     margin: 0 auto;
     margin-top: 10%;
+    display: block;
+}
+
+#hero a {
+    text-decoration: none;
 }
 
 #partiamo {
@@ -51,24 +56,36 @@ header img {
     text-transform: uppercase;
     border-radius: 7px;
     box-sizing: border-box;
-    display: inline-block;
+    width: 20%;
+    margin-bottom: 10%;
 }
 
 #partiamo p {
     margin: 15px 25px 15px 25px;
     font-size: 0.8em;
+
 }
 
 #info {
     padding: 8%;
 }
 
-.info-desc {
+#right {
+    width: 45%;
+    margin-left: 10%;
+}
+
+/* .info-desc {
     width: 95%;
+} */
+
+.info-desc h3 {
+    font-size: 0.9em;
 }
 
 .info-desc p {
     margin-top: 5px;
+    font-size: 0.8em;
 }
 
 #round-img {
@@ -81,12 +98,17 @@ header img {
     color: white;
     padding: 3%;
     margin-bottom: 15%;
+    text-align: center;
 }
 
 #review h2 {
     color: white;
     font-size: 2em;
     margin-top: 10%;
+}
+
+blockquote {
+    font-size: 1.5em;
 }
 
 cite {
@@ -103,11 +125,13 @@ cite + p {
 }
 
 .card {
-    width: 90%;
+    width: 30%;
     border: 1px solid #dee1e3;
     border-radius: 6px;
-    margin-bottom: 10%;
+    text-align: center;
+    margin: 0 10px 10% 10px;
 }
+
 
 .card img {
     width: 100%;
@@ -128,13 +152,14 @@ cite + p {
 footer {
     color: #c8e7f0;
     background-color: #25A2C3;
-    padding: 5%;
+    padding: 10px;
+    text-align: center;
 }
 
 footer h2 {
     color: white;
-    font-size: 2em;
-    margin: 5%;
+    font-size: 3em;
+    margin: 2%;
 }
 
 .icon {
@@ -142,11 +167,16 @@ footer h2 {
 }
 
 footer p {
-    width: 57%;
+    width: 15%;
     border-top: 1px white solid;
     margin: 0 auto;
-    margin-top: 7%;
-    padding: 5%;
+    margin-top: 3%;
+    padding: 3%;
+    font-size: 0.7em;
+}
+
+footer > div {
+    text-align: left;
 }
 
 footer a:link, footer a:visited {
