@@ -1,0 +1,163 @@
+body {
+    font-size: 1.2rem;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #25A2C3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+header {
+    background-color: black;
+    padding: 8%;
+}
+
+header img {
+    width: 40%;
+}
+
+#hero {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    padding: 5%;
+}
+
+#hero h1 {
+    line-height: 1;
+}
+
+#hero > div {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+#partiamo {
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#partiamo p {
+    margin: 15px 25px 15px 25px;
+    font-size: 0.8em;
+}
+
+#info {
+    padding: 8%;
+}
+
+.info-desc {
+    width: 95%;
+}
+
+.info-desc p {
+    margin-top: 5px;
+}
+
+#round-img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#review {
+    background-color: #e22d0e;
+    color: white;
+    padding: 3%;
+    margin-bottom: 15%;
+}
+
+#review h2 {
+    color: white;
+    font-size: 2em;
+    margin-top: 10%;
+}
+
+cite {
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+cite + p {
+    margin: 0 0 20px 0;
+}
+
+#cards {
+    padding: 10px
+}
+
+.card {
+    width: 90%;
+    border: 1px solid #dee1e3;
+    border-radius: 6px;
+    margin-bottom: 10%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card div {
+    width: 85%;
+}
+
+.card div h4 {
+    margin-top: 15px;
+}
+
+.card h4 + p {
+    margin-bottom: 10%;
+}
+
+footer {
+    color: #c8e7f0;
+    background-color: #25A2C3;
+    padding: 5% 5% 5% 5%;
+}
+
+footer h2 {
+    color: white;
+    font-size: 2em;
+    margin: 5%;
+}
+
+.icon {
+    display: block;
+}
+
+footer p {
+    width: 57%;
+    border-top: 1px white solid;
+    margin: 0 auto;
+    margin-top: 7%;
+    padding: 5%;
+}
+
+footer a:link, footer a:visited {
+    color: #c8e7f0;
+}
+
+footer a:hover {
+    color: white
+}
+
+footer div div:last-child a {
+    text-decoration: none;
+}
+
