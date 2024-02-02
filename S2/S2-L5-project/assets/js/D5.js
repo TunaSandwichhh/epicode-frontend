@@ -282,6 +282,9 @@ const lettersToNums2 = (arr) => {
   return newArr;
 };
 
+// VERSIONE PER ESERCIZIO
+// ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+
 const lettersToNums = (arr) => {
   const newArr = [];
   for (let letter of arr) {
