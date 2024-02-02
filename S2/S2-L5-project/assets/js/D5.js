@@ -232,7 +232,6 @@ const printTilTarget = (arr, target) => {
  *        if(arr[i]) === target)
  *           break;
  *        i++
- *
  */
 
 // printTilTarget(numericArray, 32);

@@ -4,8 +4,16 @@ body {
     background-color: #E9EDEE;
 }
 
-#header {
+h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+header, footer {
     background-color: #222f3f;
+}
+
+#header {
     padding: 1% 0 1% 2%;
 }
 
@@ -13,16 +21,28 @@ body {
     width: 8%;
 }
 
-nav {
+nav, footer a {
     background-color: #364759;
+}
+
+nav {
     padding: 0.5% 0 0.5% 2.5%
 }
 
-nav a {
+nav a, .shop-now-txt a {
     text-decoration: none;
+}
+
+nav a {
     margin-right: 1%;
+}
+
+a {
+    font-size: 0.9em;
+}
+
+nav a, main > p, .centered-text, footer a {
     color: white;
-    font-size: 0.8em;
 }
 
 main {
@@ -30,25 +50,27 @@ main {
 }
 
 main > p {
-    color: white;
     background-color: #F56600;
-    text-align: center;
     padding: 0.5%;
 }
 
-.gift-guide img {
-    width: 100%;
-    margin-top: 1.5%;
+main > p, .centered-text, .wide-imgs, footer {
+    text-align: center;
+}
 
+.gift-guide img, .wide-imgs img, .card img{
+    width: 100%;
+}
+
+.gift-guide img {
+    margin-top: 1.5%;
 }
 
 .centered-text {
     position: absolute;
     top: 43%;
     left: 50%;
-    text-align: center;
     transform: translate(-50%, -50%);
-    color: white;
 }
 
 .perfect-gift {
@@ -62,60 +84,47 @@ main > p {
 }
 
 .shop-now-txt h4 {
-    margin: 0 0 10px; 
+    margin: 0 5px 0 20px; 
     display: inline;
 }
 
 .shop-now-txt a {
-    text-decoration: none;
     color: #1a73e8;
     padding: 5px 10px;
-    font-size: 0.9em;
+}
+
+.shop-now-txt a, footer a {
     font-weight: 600;
 }
 
 .card {
     width: 23%;
-    display: inline-block;
     margin: 0 10px;
-
 }
 
+.card, .card img {
+    display: inline-block;
+}
 
 .card img{
-    display: inline-block;
     vertical-align: top; 
     border-radius: 20px;
     overflow: hidden;
-    width: 100%;
     margin: 0 15px;
     box-shadow: 5px 5px 10px rgba(66, 66, 66, 0.3);
     height: 50vh;
 }
 
 .wide-imgs {
-    text-align: center;
     margin-top: 3%;
-}
-
-.wide-imgs img {
-    width: 100%;
-}
-
-footer {
-    text-align: center;
-    background-color: #222f3f;
 }
 
 footer a {
     display: block;
-    color: white;
-    font-weight: 600;
-    background-color: #364759;
-    padding: 0.7%;
+    padding: 1.2%;
 }
 
 footer img {
     width: 10%;
-    margin: 3%;
+    margin: 3.5%;
 }
