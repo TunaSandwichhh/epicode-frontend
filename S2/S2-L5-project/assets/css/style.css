@@ -1,0 +1,113 @@
+body {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E9EDEE;
+}
+
+#header {
+    background-color: #222f3f;
+    padding: 1% 0 1% 2%;
+}
+
+#header-img {
+    width: 8%;
+}
+
+nav {
+    background-color: #364759;
+    padding: 0.5% 0 0.5% 2.5%
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 1%;
+    color: white;
+    font-size: 0.8em;
+}
+
+main {
+    margin: 2.5%;
+}
+
+main > p {
+    color: white;
+    background-color: #F56600;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.gift-guide img {
+    width: 100%;
+    margin-top: 1.5%;
+
+}
+
+.centered-text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.perfect-gift {
+    background-color: white;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.shop-now-txt {
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.shop-now-txt h4 {
+    margin: 0 0 10px; 
+    display: inline;
+}
+
+.shop-now-txt a {
+    text-decoration: none;
+    color: #1a73e8;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+
+.perfect-gift img {
+    display: inline-block;
+    vertical-align: top; 
+    border-radius: 20px;
+    overflow: hidden;
+    width: 20%;
+    margin: 0 15px;
+    box-shadow: 5px 5px 10px rgba(66, 66, 66, 0.3);
+}
+
+.wide-imgs {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.wide-imgs img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #222f3f;
+}
+
+footer a {
+    display: block;
+    color: white;
+    font-weight: 600;
+    background-color: #364759;
+    padding: 0.7%;
+}
+
+footer img {
+    width: 10%;
+    margin: 3%;
+}
