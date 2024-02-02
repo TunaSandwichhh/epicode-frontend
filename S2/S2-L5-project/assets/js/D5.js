@@ -180,12 +180,6 @@ const getFirstTrim = (arr) => {
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
-// const fizzBuzz = (arr) => {
-//   for (let car of cars) {
-//     car.color.charAt(0) === "b" ? console.log("Fizz") : console.log("Buzz");
-//   }
-// };
-
 const fizzBuzz = (arr) => {
   let value = "";
 
@@ -200,7 +194,14 @@ const fizzBuzz = (arr) => {
   }
 };
 
+const fizzBuzz2 = (arr) => {
+  for (let car of cars) {
+    car.color.charAt(0) === "b" ? console.log("Fizz") : console.log("Buzz");
+  }
+};
+
 // fizzBuzz(cars);
+//fizzBuzz2(cars);
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -223,19 +224,33 @@ const printTilTarget = (arr, target) => {
   }
 };
 
-// NOTE: Il ciclo si interrompe al numero precedente il target.
-//       Per stampare il target incluso:
-/**
- *      let i = 0;
- *      while(i < arr.length)
- *        console.log(arr[i])
- *        if(arr[i]) === target)
- *           break;
- *        i++
- */
+//   NOTE:
+//   Il ciclo si interrompe al numero precedente il target.
+//   Per stampare il target incluso:
+//   ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+
+const printTilTarget2 = (arr, target) => {
+  if (!arr.includes(target)) {
+    console.log("Value not present in provided array");
+    return;
+  }
+
+  let i = 0;
+
+  while (i < arr.length) {
+    console.log(arr[i]);
+    if (arr[i] === target) {
+      break;
+    }
+    i++;
+  }
+};
 
 // printTilTarget(numericArray, 32);
 // printTilTarget(numericArray, 99);
+
+// printTilTarget2(numericArray, 32);
+// printTilTarget2(numericArray, 99);
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
