@@ -200,7 +200,7 @@ const fizzBuzz = (arr) => {
   }
 };
 
-fizzBuzz(cars);
+// fizzBuzz(cars);
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -235,8 +235,8 @@ const printTilTarget = (arr, target) => {
  *
  */
 
-printTilTarget(numericArray, 32);
-printTilTarget(numericArray, 99);
+// printTilTarget(numericArray, 32);
+// printTilTarget(numericArray, 99);
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -371,5 +371,5 @@ const lettersToNums = (arr) => {
   return newArr;
 };
 
-console.log(lettersToNums2(charactersArray));
-console.log(lettersToNums(charactersArray));
+// console.log(lettersToNums2(charactersArray));
+// console.log(lettersToNums(charactersArray));
