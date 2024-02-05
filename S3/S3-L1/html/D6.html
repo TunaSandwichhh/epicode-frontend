@@ -86,7 +86,7 @@
 
       const changeTitle = function (text) {
         let title = document.querySelector("h1");
-        return (title.innerText = text);
+        title.innerText = text;
       };
 
       //changeTitle("Nuovo Testo");
@@ -97,7 +97,7 @@
 
       const addClassToTitle = function () {
         let title = document.querySelector("h1");
-        return (title.className = "myHeading");
+        title.className = "myHeading";
       };
 
       //addClassToTitle();
@@ -162,7 +162,7 @@
 
       const hideFirstUl = function () {
         const firstList = document.getElementById("firstList");
-        return (firstList.innerHTML = "");
+        firstList.innerHTML = "";
       };
 
       //hideFirstUl();
@@ -260,7 +260,7 @@
           const RGB2 = Math.floor(Math.random() * 256);
           const RGB3 = Math.floor(Math.random() * 256);
 
-          return (changeMyColor.style.color = `rgb(${RGB1}, ${RGB2}, ${RGB3})`);
+          changeMyColor.style.color = `rgb(${RGB1}, ${RGB2}, ${RGB3})`;
         });
       };
 
