@@ -309,4 +309,4 @@ const indexOfMovie = (arr, year) => {
   return res;
 };
 
-console.log(indexOfMovie(movies, "2005"));
+//console.log(indexOfMovie(movies, "2005"));
