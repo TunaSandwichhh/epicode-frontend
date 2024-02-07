@@ -1,0 +1,87 @@
+body {
+    font-size: 1rem;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    background-color: #3C424A;
+    color: aliceblue;
+}
+
+header {
+    border-bottom: 3px solid #343A40;
+    width: 100%;
+
+}
+
+header li {
+    display: inline;
+    font-weight: 800;
+    margin: 0 5%;
+    font-size: 1.3em;
+}
+
+.date {
+    margin: 5%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #6D737C;
+}
+
+.todo li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+#task {
+    background-color: #343A40;
+    border: solid 1px #161717;
+    padding: 15px;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+#create {
+    padding: 15px;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: #ff8800;
+    cursor: pointer;
+    border: none;
+}
+
+#errore{
+    color: #ff8800;
+    font-weight: 800;
+    font-size: 1.3em
+}
+
+.todo {
+    margin-top: 5%;
+}
+
+h2 {
+   font-size: 2em;
+}
+
+#list li button {
+    background-color: #ff8800;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 5%;
+}
+
+#list li {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

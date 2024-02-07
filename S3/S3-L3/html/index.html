@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <ul>
+        <li>Day</li>
+        <li>Week</li>
+        <li>Month</li>
+        <li>Year</li>
+      </ul>
+    </header>
+    <main>
+      <div class="date">
+        <h1 id="giornoSettimana"></h1>
+        <h3 id="dataCompleta"></h3>
+      </div>
+      <form>
+        <input id="task" type="text" placeholder="Aggiungi un task..." />
+        <button id="create">Crea Task</button>
+      </form>
+      <p id="errore"></p>
+      <div class="todo">
+        <h2>//TODO</h2>
+        <ul id="list"></ul>
+      </div>
+    </main>
+    <script src="../assets/js/script.js"></script>
+  </body>
 </html>
