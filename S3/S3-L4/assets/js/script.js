@@ -40,6 +40,11 @@ const creaTabellaGiocatore = () => {
   }
 };
 
+const hideForm = () => {
+  const form = document.querySelector("form");
+  form.style.display = "none";
+};
+
 const estraiNumero = () => {
   const numeroEstrattoH3 = document.getElementById("numero-estratto");
   let numeroEstratto = Math.floor(Math.random() * 90) + 1;
@@ -79,4 +84,5 @@ const conferma = document.getElementById("conferma");
 conferma.addEventListener("click", (e) => {
   e.preventDefault();
   generaTotTabelleGiocatore();
+  hideForm();
 });
