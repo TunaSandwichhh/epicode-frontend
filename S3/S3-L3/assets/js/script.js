@@ -24,7 +24,7 @@ create.addEventListener("click", (event) => {
     list.appendChild(listItem);
 
     listItem.addEventListener("click", () => {
-      listItem.classList.toggle("completed");
+      listItem.classList.toggle("completato");
     });
   }
 
