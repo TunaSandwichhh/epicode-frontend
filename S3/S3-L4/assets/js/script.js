@@ -10,7 +10,23 @@ const creaTabella = () => {
   }
 };
 
+const creaTabellaGiocatore = () => {
+  const tabelleDivGiocatore = document.getElementById("tabella-giocatore");
+  const numeriEstrattiGiocatore = [];
+  while (numeriEstrattiGiocatore.length < 24) {
+    let random = Math.floor(Math.random() * 90) + 1;
+    if (!numeriEstrattiGiocatore.includes(random)) {
+      const cella = document.createElement("div");
+      cella.innerHTML = `<h3>${random}</h3>`;
+      cella.id = `cella-giocatore${random}`;
+      tabelleDivGiocatore.appendChild(cella);
+      numeriEstrattiGiocatore.push(random);
+    }
+  }
+};
+
 creaTabella();
+creaTabellaGiocatore();
 
 const estraiNumero = () => {
   const numeroEstrattoH3 = document.getElementById("numero-estratto");
@@ -21,6 +37,7 @@ const estraiNumero = () => {
     numeriEstratti.push(numeroEstratto);
     numeroEstrattoH3.innerText = `Numero estratto: ${numeroEstratto}`;
     evidenziaCella(numeroEstratto);
+    evidenziaCellaGiocatore(numeroEstratto);
   }
 };
 
@@ -28,6 +45,13 @@ const evidenziaCella = (id) => {
   const cellaEstratta = document.getElementById(`cella${id}`);
   if (cellaEstratta) {
     cellaEstratta.classList.add("estratto");
+  }
+};
+
+const evidenziaCellaGiocatore = (id) => {
+  const cellaEstratta = document.getElementById(`cella-giocatore${id}`);
+  if (cellaEstratta) {
+    cellaEstratta.classList.add("estratto-giocatore");
   }
 };
 
