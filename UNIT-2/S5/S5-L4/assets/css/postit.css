@@ -1,0 +1,57 @@
+body {
+    font-family: "Indie Flower", cursive;
+    color: black;
+}
+
+.post-it-container {
+    width: 17%;
+    padding: 30px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.post-it-description {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.verde {
+    transform: rotate(7deg);
+    background: rgb(185, 224, 187);
+    background: linear-gradient(180deg, rgba(185, 224, 187, 1) 0%, rgba(109, 129, 110, 1) 100%);
+}
+
+.viola {
+    transform: rotate(-6deg);
+    background: rgb(199, 199, 242);
+    background: linear-gradient(180deg, rgba(199, 199, 242, 1) 0%, rgba(96, 96, 116, 1) 100%);
+}
+
+.post-it-container:nth-child(2) {
+    transform: rotate(7deg) translateY(10px);
+}
+
+.giallo {
+    transform: rotate(-4deg);
+    background: rgb(242, 243, 190);
+    background: linear-gradient(180deg, rgba(242, 243, 190, 1) 0%, rgba(141, 142, 113, 1) 100%);
+}
+
+.post-it-container:hover {
+    transform: scale(1.2);
+}
+
