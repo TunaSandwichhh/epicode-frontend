@@ -16,6 +16,20 @@ header {
     transition: 0.5s;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        padding:  0px 50px;
+        gap: 15%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -29,6 +43,19 @@ ul li {
     font-size: 0.8em;
 }
 
+@media screen and (max-width: 768px) {
+    ul li {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    ul li:first-child, ul li:nth-child(2), ul li:nth-child(3) {
+        display: none;
+    }
+}
+
+
 .get-started {
     background-color: black;
     color: white;
@@ -39,6 +66,15 @@ ul li {
     justify-content: center;
     transition: 0.5s;
 }
+
+@media screen and (max-width: 768px) {
+    .get-started {
+        padding: 1px 10px;
+        width: 90px;
+        border-radius: 40px;
+    }
+}
+
 
 
 #hero {
@@ -93,6 +129,40 @@ h1 {
     margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .hero-txt {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .hero-txt h2 {
+        font-size: 1em;
+        width: 80%;
+    }
+
+    .start-reading {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    #hero {
+        padding-bottom: 50px;
+    }
+    
+    .hero-txt {
+        padding: 20px;
+    }
+
+    .m-div {
+        display: none;
+    }
+}
+
 /*  */
 
 #trending-div {
@@ -103,9 +173,38 @@ h1 {
     border-bottom: 2px solid rgba(0, 0, 0, 0.057);
 }
 
+@media screen and (max-width: 768px) {
+    #trending-div {
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #trending-div {
+        padding: 20px
+    }
+}
+
+.trending-title {
+    display: flex;
+    gap: 15px;
+}
+
 #trending-div h3 {
     text-transform: uppercase;
     font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+    #trending-div h3 {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #trending-div h3 {
+        font-size: 0.8em;
+    }
 }
 
 .trending-articles {
@@ -115,9 +214,26 @@ h1 {
 
 .article {
     display: flex;
-    align-items: first baseline;
-    gap: 20px;
+    align-items: baseline;
+    gap: 30px;
     width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .article {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .trending-articles {
+        gap: 20px;
+    }
+
+    .article {
+        width: 100%;
+    }
 }
 
 .article > p {
@@ -129,9 +245,14 @@ h1 {
 .author-div {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
-.author-div img{
+#trending-div .author-div img {
+    width: 8%;
+}
+
+.author-div img {
     border-radius: 50%;
 }
 
@@ -149,6 +270,7 @@ h1 {
 .article-txt h4 {
     font-size: 0.9em;
     margin: 0;
+    margin-top: -10px;
 }
 
 .article-txt > p{
@@ -205,6 +327,10 @@ h1 {
     opacity: 0.7;
 }
 
+.infos img:last-child {
+    margin-left: 30%;
+}
+
 .grey-tag {
     background-color: rgba(0, 0, 0, 0.057);
     border-radius: 20px;
@@ -215,6 +341,14 @@ h1 {
 
 .grey-tag p {
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    .infos p{
+        font-size: 0.5em;
+    }
 }
 
 /*  */
@@ -271,4 +405,46 @@ aside h3 {
 .header-changed .get-started {
     background-color: #1a8917;
     transition: 0.5s;
+}
+
+.sticky-aside {
+    position: sticky;
+    top: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    #discover {
+        flex-direction: column;
+        padding: 50px;
+        gap: 0;
+    }
+
+    aside {
+        order: -1;
+        width: 100%;
+    }
+
+    .sticky-aside {
+        position: static;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    #discover {
+        padding: 50px 20px;
+    }
+
+    .tag {
+        font-size: 0.6em;
+    }
+
+    .links {
+        align-content: space-evenly;
+    }
+
+    .links p {
+        margin: 0;
+    }
 }
