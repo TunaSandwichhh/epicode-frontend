@@ -1,0 +1,274 @@
+body {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffc017;
+    display: flex;
+    padding:  0px 200px;
+    gap: 40%;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+ul li {
+    font-size: 0.8em;
+}
+
+.get-started {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border-radius: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+#hero {
+    background-color: #ffc017;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.hero-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 200px;
+}
+
+h1 {
+    font-family: "Spectral", serif;
+    font-size: 4em;
+    margin-bottom: -30px;
+}
+
+.hero-txt h2 {
+    font-weight: 400;
+    font-size: 1.1em;
+    margin: 0;
+    width: 65%;
+}
+
+.start-reading {
+    background-color: black;
+    color: white;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0;
+
+}
+
+.start-reading p {
+    margin: 10px;
+}
+
+.m-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.m-div p {
+    margin: 0;
+}
+
+/*  */
+
+#trending-div {
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.057);
+}
+
+#trending-div h3 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.trending-articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    align-items: first baseline;
+    gap: 20px;
+    width: 30%;
+}
+
+.article > p {
+    font-size: 1.5em;
+    font-weight: 900;
+    opacity: 0.2;
+}
+
+.author-div {
+    display: flex;
+    gap: 10px;
+}
+
+.author-div img{
+    border-radius: 50%;
+}
+
+.author-div p{
+    font-weight: 500;
+    font-size: 0.7em;
+}
+
+.article-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article-txt h4 {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.article-txt > p{
+    font-size: 0.8em;
+    margin: 0;
+    opacity: 0.5;
+}
+/*  */
+
+
+.other-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secondary-article {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+.secondary-article > img{
+ width: 35%;
+}
+
+.secondary-article-txt {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.secondary-article-txt h3{
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.secondary-article-txt > p {
+    font-size: 0.8em;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.infos p {
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+.grey-tag {
+    background-color: rgba(0, 0, 0, 0.057);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.grey-tag p {
+    margin: 0;
+}
+
+/*  */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+aside h3 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    border: 1px solid rgba(0, 0, 0, 0.248);
+    font-size: 0.7em;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.links {
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    opacity: 0.6;
+    font-size: 0.7em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+#discover {
+    display: flex;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+.header-changed {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.header-changed .get-started {
+    background-color: #1a8917;
+    transition: 0.5s;
+}
