@@ -1,0 +1,14 @@
+@use 'colori';
+
+@function btn-color($index) {
+    @return nth(colori.$btn-colors, $index);
+  }
+
+.btn {
+    @for $i from 1 through length(colori.$btn-colors) {
+        &:nth-child(#{$i}) {
+            background-color: btn-color($i);
+            color: #ffffff;
+        }
+    }
+}

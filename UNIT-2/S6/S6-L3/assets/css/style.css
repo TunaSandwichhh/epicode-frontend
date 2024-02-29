@@ -1,0 +1,14 @@
+.btn:nth-child(1) {
+  background-color: #0E6CFF;
+  color: #ffffff;
+}
+.btn:nth-child(2) {
+  background-color: #FF8700;
+  color: #ffffff;
+}
+.btn:nth-child(3) {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
