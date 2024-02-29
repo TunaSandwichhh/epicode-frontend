@@ -1,0 +1,39 @@
+body {
+    background-color: black; 
+}
+
+h1, h2, h3, h4, h5 {
+    color: white;
+}
+
+.navbar a{
+    color: grey;
+    font-weight: 600;
+}
+
+.genres p {
+    color: white;
+    padding: 10px 0;
+}
+
+.icons-top p{
+    color: grey;
+}
+
+.icons-top > div {
+    border: 2px solid grey;
+}
+
+footer p {
+    color: grey;
+}
+
+.carousel-item img {
+    width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-item img {
+        width: 15%;
+    }
+}
