@@ -25,66 +25,72 @@
     <main>
       <div class="container d-flex">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-4 col-md-5 col-lg-6">
           <div class="row border-bottom border-secondary">
             <div class="col">
               <h1 class="display-3">Edit Profile</h1>
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3">
               <img src="../assets/img/avatar.png" class="img-fluid" alt="" />
             </div>
             <div class="col">
-              <div class="col-10">
+              <div class="col-lg-10">
                 <p class="m-0 text-light bg-secondary p-2">Strive Student</p>
               </div>
               <div class="col mt-4">
                 <div class="col mb-2">
-                  <h3 class="m-0 text-light h5">Language:</h3>
+                  <h3 class="m-0 text-light h5 opacity-50">Language:</h3>
                 </div>
-                <div class="col-3 border border-light">
+                <div class="col-lg-3 border border-light">
                   <p class="m-0 text-light text-center p-1">English ↓</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row d-flex justify-content-end">
-            <div class="col-9 border-top border-secondary">
-              <h3 class="mt-4 text-light h5">Maturity Settings:</h3>
+
+          <div
+            class="row d-flex flex-column justify-content-end flex-lg-row align-items-md-end"
+          >
+            <div class="col-6 col-lg-9 border-top border-secondary">
+              <h3 class="mt-4 text-light h5 opacity-50">Maturity Settings:</h3>
             </div>
-            <div class="col-9 mt-2">
-              <div class="col-5">
-                <p class="m-0 text-light text-center p-1 bg-secondary">
+            <div class="col-md-6 col-lg-9 mt-2">
+              <div class="col-md-10 col-lg-5">
+                <p
+                  class="m-0 text-light fw-bold text-center p-1 bg-secondary bg-opacity-25"
+                >
                   ALL MATURITY SETTINGS
                 </p>
               </div>
             </div>
-            <div class="col-9 mt-3">
+            <div class="col-md-6 col-lg-9 mt-3">
               <p class="m-0 text-light">
                 Show titles of all amturity ratings for this profile
               </p>
             </div>
-            <div class="col-9 mt-3 border-bottom border-secondary">
-              <div class="btn mb-4 col-2 btn-outline-secondary">
+            <div class="col-6 col-lg-9 mt-3 border-bottom border-secondary">
+              <div class="btn mb-4 col-md-8 col-lg-2 btn-outline-secondary">
                 <p class="m-0">EDIT</p>
               </div>
             </div>
           </div>
+
           <div
-            class="row d-flex justify-content-end border-bottom border-secondary"
+            class="row d-flex flex-column justify-content-end flex-lg-row align-items-md-end border-bottom border-secondary"
           >
-            <div class="col-9 border-top border-secondary">
-              <h3 class="mt-4 text-light h5">Autoplay Controls</h3>
+            <div class="col-6 col-lg-9">
+              <h3 class="mt-4 text-light h5 opacity-50">Autoplay Controls:</h3>
             </div>
-            <div class="col-9 mt-2">
-              <div class="col mb-1">
+            <div class="col-md-6 col-lg-9 mt-2">
+              <div class="col-lg-4 col-lg-12 mb-1 d-flex">
                 <input type="checkbox" name="next" id="nextEp" checked="true" />
                 <label for="next" class="text-light"
                   >Autoplay next episode in a series on all devices</label
                 >
               </div>
-              <div class="col mb-4">
+              <div class="col-lg-4 col-lg-12 mb-4 d-flex">
                 <input
                   type="checkbox"
                   name="previews"
@@ -98,18 +104,18 @@
             </div>
           </div>
 
-          <div class="row mt-4">
-            <div class="col-2">
+          <div class="row mt-4 d-flex flex-column flex-lg-row">
+            <div class="col-8 col-md-5 col-lg-2">
               <div class="border border-secondary text-center p-2 bg-light">
                 <p class="m-0 fw-bold">SAVE</p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-8 col-lg-4">
               <div class="border border-secondary text-center p-2">
                 <p class="m-0 text-secondary">CANCEL</p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-11 col-lg-6">
               <div class="border border-secondary text-center p-2">
                 <p class="m-0 text-secondary">DELETE PROFILE</p>
               </div>

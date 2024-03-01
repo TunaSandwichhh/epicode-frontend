@@ -15,13 +15,28 @@ h1, h2, h3, h4, h5 {
     font-weight: 600;
 }
 
+.genres {
+    cursor: pointer;
+}
+
 .genres p {
     color: white;
     padding: 10px 0;
+    transition: 0.3s;
+}
+
+.genres p:hover {
+    background-color: white;
+    color: black;
 }
 
 .icons-top > div {
     border: 2px solid grey;
+    transition: 0.3s;
+}
+
+.icons-top > div:hover {
+    background-color: grey;
 }
 
 footer p {
@@ -40,4 +55,15 @@ footer p {
 
 #profile-logo {
     width: 10%;
+}
+
+.movies img {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+.movies img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
