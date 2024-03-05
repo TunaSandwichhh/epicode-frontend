@@ -15,3 +15,16 @@ const u1 = new User("a", "a", 12, "a");
 const u2 = new User("b", "b", 16, "b");
 
 console.log(u2.compareAge(u1));
+
+class Pet {
+  constructor(petName, ownerName, species, breed) {
+    this.petName = petName;
+    this.ownerName = ownerName;
+    this.species = species;
+    this.breed = breed;
+  }
+
+  hasSameOwner(pet) {
+    return this.ownerName === pet.ownerName;
+  }
+}
