@@ -31,7 +31,7 @@ const createCards = (photo, rowElement) => {
   const cardDiv = document.createElement("div");
   cardDiv.classList.add("card", "mb-4", "shadow-sm");
   cardDiv.innerHTML = `
-      <img src="${photo.src.medium}" class="card-img-top" alt="Photo by ${photo.photographer}">
+      <img src="${photo.src.landscape}" class="card-img-top" alt="Photo by ${photo.photographer}">
       <div class="card-body">
         <p class="card-text">${photo.photographer}</p>
         <div class="d-flex justify-content-between align-items-center">
@@ -75,3 +75,21 @@ const handleSecondaryClick = async (e) => {
 
 loadPicsBtn.addEventListener("click", handleLoadClick);
 loadSecondaryPicsBtn.addEventListener("click", handleSecondaryClick);
+
+async function readImgs(string) {
+  try {
+    let ask = await fetch(URL + string, {
+      headers: {
+        Authorization:
+          "cPxSuuVJ73X6S7cCb2L1OjhvaPrJzRH8DRUT2NOVzdWzlNIp31n4Lrcy",
+      },
+    });
+    let response = await ask.json();
+
+    for (let i = 0; i < arrayCards.length; i++) {
+      arrayCards[i].src = response.photos[i].url;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
