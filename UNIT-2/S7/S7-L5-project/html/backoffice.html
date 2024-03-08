@@ -26,9 +26,13 @@
           <div class="col border-bottom border-secondary mb-5">
             <h1 class="display-5 fw-normal" id="back-title">Edit product</h1>
           </div>
+
           <form id="form">
             <div class="mb-3">
-              <label for="name" class="form-label">Nome</label>
+              <label for="name" class="form-label">Name</label>
+              <p id="modalError" class="m-0 text-danger fw-bold">
+                A product with the same name already exists!
+              </p>
               <input
                 type="text"
                 class="form-control"
@@ -48,7 +52,7 @@
               />
             </div>
             <div class="mb-3">
-              <label for="price" class="form-label">Prezzo</label>
+              <label for="price" class="form-label">Price</label>
               <input
                 type="number"
                 class="form-control"
@@ -58,7 +62,7 @@
               />
             </div>
             <div class="mb-3">
-              <label for="image" class="form-label">URL Immagine</label>
+              <label for="image" class="form-label">Image URL</label>
               <input
                 type="text"
                 class="form-control"
@@ -69,7 +73,7 @@
             </div>
             <div class="mb-3">
               <label for="description" class="form-label"
-                >Descrizione prodotto</label
+                >Product Description</label
               >
               <textarea
                 class="form-control"

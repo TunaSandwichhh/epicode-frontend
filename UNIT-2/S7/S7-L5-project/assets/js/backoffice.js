@@ -8,6 +8,9 @@ const resetBtn = document.getElementById("reset-btn");
 
 const backTitle = document.getElementById("back-title");
 
+const modalError = document.getElementById("modalError");
+modalError.style.display = "none";
+
 //@DELETE
 const deleteProduct = async (productId) => {
   try {
@@ -98,6 +101,25 @@ const getProductDetails = async (id) => {
   }
 };
 
+//@READ
+const getAllProducts = async () => {
+  try {
+    const response = await fetch(
+      "https://striveschool-api.herokuapp.com/api/product/",
+      {
+        headers: {
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhY2I3YjJkN2IxMTAwMTkwZTZkYzAiLCJpYXQiOjE3MDk4ODYzMzEsImV4cCI6MTcxMTA5NTkzMX0.RHVaySalIC3-4-ekqrpHlAOMhYt5o08IG31A77sPSQA",
+        },
+      }
+    );
+    return await response.json();
+  } catch (e) {
+    console.log(e);
+    return [];
+  }
+};
+
 const prefillForm = async (id) => {
   const product = await getProductDetails(id);
   if (product) {
@@ -119,6 +141,19 @@ const handleSubmit = async (e) => {
     imageUrl: document.getElementById("image").value,
     price: document.getElementById("price").value,
   };
+
+  const products = await getAllProducts();
+
+  const productstWithSameName = products.filter(
+    (product) =>
+      product.name.toLowerCase() === productData.name.toLowerCase() &&
+      product._id !== productData._id
+  );
+  console.log(productstWithSameName);
+
+  if (productstWithSameName.length > 0) {
+    modalError.style.display = "block";
+  }
 
   if (productId) {
     await updateProduct(productId, productData);
