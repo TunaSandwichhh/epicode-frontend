@@ -1,5 +1,7 @@
 const getProducts = async () => {
   try {
+    const loadingSpinner = document.getElementById("loadingSpinner");
+
     const response = await fetch(
       "https://striveschool-api.herokuapp.com/api/product/",
       {
@@ -11,6 +13,8 @@ const getProducts = async () => {
     );
     const data = await response.json();
     console.log(data);
+    loadingSpinner.style.display = "none";
+
     return data;
   } catch (e) {
     console.log(e);
@@ -23,9 +27,9 @@ const createCard = (product) => {
   colDiv.classList.add("col-md-4");
 
   const cardDiv = document.createElement("div");
-  cardDiv.classList.add("card", "mb-4", "shadow-sm");
+  cardDiv.classList.add("card", "mb-4", "shadow-sm", "h-75");
   cardDiv.innerHTML = `
-      <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
+      <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}"  style="height: 200px; object-fit: cover;">
       <div class="card-body bg-dark">
         <h3 class="card-text text-light">${product.name}</h3>
         <p class="card-text text-light">${product.description}</p>

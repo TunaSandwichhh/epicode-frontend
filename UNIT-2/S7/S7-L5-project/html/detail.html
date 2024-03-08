@@ -26,7 +26,16 @@
         <div
           class="col border-bottom border-secondary mb-5 d-flex justify-content-between"
         >
-          <h1 class="display-5 fw-normal mb-3">Details</h1>
+          <div class="d-flex">
+            <h1 class="display-5 fw-normal mb-3">Details</h1>
+            <div
+              class="spinner-border ms-2 align-self-center ms-3"
+              role="status"
+              id="loadingSpinner"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
           <a
             class="navbar-brand align-self-center text-info fw-bold"
             href="index.html"

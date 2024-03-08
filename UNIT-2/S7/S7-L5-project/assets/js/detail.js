@@ -6,6 +6,7 @@ const productImgCol = document.getElementById("product-img");
 
 const getProduct = async (productId) => {
   try {
+    const loadingSpinner = document.getElementById("loadingSpinner");
     const options = {
       headers: {
         Authorization:
@@ -18,6 +19,7 @@ const getProduct = async (productId) => {
     );
     const data = await response.json();
     console.log(data);
+    loadingSpinner.style.display = "none";
     return data;
   } catch (e) {
     console.log(e);
