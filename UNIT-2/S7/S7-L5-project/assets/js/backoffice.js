@@ -142,22 +142,22 @@ const handleSubmit = async (e) => {
     price: document.getElementById("price").value,
   };
 
-  const products = await getAllProducts();
-
-  const productstWithSameName = products.filter(
-    (product) =>
-      product.name.toLowerCase() === productData.name.toLowerCase() &&
-      product._id !== productData._id
-  );
-  console.log(productstWithSameName);
-
-  if (productstWithSameName.length > 0) {
-    modalError.style.display = "block";
-  }
-
   if (productId) {
     await updateProduct(productId, productData);
   } else {
+    const products = await getAllProducts();
+
+    const productstWithSameName = products.filter(
+      (product) =>
+        product.name.toLowerCase() === productData.name.toLowerCase() &&
+        product._id !== productData._id
+    );
+    console.log(productstWithSameName);
+
+    if (productstWithSameName.length > 0) {
+      modalError.style.display = "block";
+    }
+
     await createProduct(productData);
   }
 };
