@@ -60,12 +60,14 @@ const createCard = (product) => {
 
 const handleLoad = async () => {
   const rowDiv = document.querySelector(".row");
-  const products = await getProducts();
+  setTimeout(async () => {
+    const products = await getProducts();
 
-  for (let product of products) {
-    const col = createCard(product);
-    rowDiv.appendChild(col);
-  }
+    for (let product of products) {
+      const col = createCard(product);
+      rowDiv.appendChild(col);
+    }
+  }, 500);
 };
 
 document.addEventListener("DOMContentLoaded", handleLoad);

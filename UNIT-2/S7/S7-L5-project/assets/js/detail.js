@@ -6,7 +6,6 @@ const productImgCol = document.getElementById("product-img");
 
 const getProduct = async (productId) => {
   try {
-    const loadingSpinner = document.getElementById("loadingSpinner");
     const options = {
       headers: {
         Authorization:
@@ -19,7 +18,6 @@ const getProduct = async (productId) => {
     );
     const data = await response.json();
     console.log(data);
-    loadingSpinner.style.display = "none";
     return data;
   } catch (e) {
     console.log(e);
@@ -36,9 +34,13 @@ const displayProduct = (product) => {
     <p class="bg-black text-warning fw-bold p-1 rounded-5 text-center w-25">$${product.price}</p>
     <p class="fs-5">${product.description}</p>
 `;
+  const loadingSpinner = document.getElementById("loadingSpinner");
+  loadingSpinner.style.display = "none";
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
   const product = await getProduct(productId);
-  displayProduct(product);
+  setTimeout(() => {
+    displayProduct(product);
+  }, 500);
 });
