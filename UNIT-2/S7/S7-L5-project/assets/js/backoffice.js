@@ -4,6 +4,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 
 const deleteBtn = document.getElementById("delete");
+const resetBtn = document.getElementById("reset-btn");
+
+const backTitle = document.getElementById("back-title");
 
 //@DELETE
 const deleteProduct = async (productId) => {
@@ -126,6 +129,14 @@ const handleSubmit = async (e) => {
 
 form.addEventListener("submit", handleSubmit);
 
+resetBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let conf = window.confirm("Are you sure?");
+  if (conf) form.reset();
+});
+
+console.log(form);
+
 if (productId) {
   prefillForm(productId);
 }
@@ -134,8 +145,10 @@ if (productId) {
   deleteBtn.style.display = "block";
   deleteBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    deleteProduct(productId);
+    let confirm = window.confirm("Are you sure?");
+    if (confirm) deleteProduct(productId);
   });
 } else {
+  backTitle.innerText = "Add Product";
   deleteBtn.style.display = "none";
 }

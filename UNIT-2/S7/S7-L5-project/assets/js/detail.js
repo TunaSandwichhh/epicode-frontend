@@ -29,10 +29,10 @@ const displayProduct = (product) => {
         <img src="${product.imageUrl}" class="img-fluid">
     `;
   productDescCol.innerHTML = `
-    <p>${product.brand}</p>
-    <h2>${product.name}</h2>
-    <p>${product.price}</p>
-    <p>${product.description}</p>
+    <p class="fs-5 m-0">${product.brand}</p>
+    <h2 class="display-5 fw-normal">${product.name}</h2>
+    <p class="bg-black text-warning fw-bold p-1 rounded-5 text-center w-25">$${product.price}</p>
+    <p class="fs-5">${product.description}</p>
 `;
 };
 

@@ -14,17 +14,29 @@
     />
 
     <header>
-      <nav class="navbar bg-dark">
+      <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="index.html">Home</a>
+          <a class="navbar-brand" href="backoffice.html">Backoffice</a>
         </div>
       </nav>
     </header>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-6" id="product-img"></div>
-        <div class="col-6" id="product-desc"></div>
+    <div class="container mt-5">
+      <div class="row d-flex flex-column">
+        <div
+          class="col border-bottom border-secondary mb-5 d-flex justify-content-between"
+        >
+          <h1 class="display-5 fw-normal mb-3">Details</h1>
+          <a
+            class="navbar-brand align-self-center text-info fw-bold"
+            href="index.html"
+            >Go Back</a
+          >
+        </div>
+        <div class="col d-flex">
+          <div class="col-6 me-4" id="product-img"></div>
+          <div class="col-6" id="product-desc"></div>
+        </div>
       </div>
     </div>
 
