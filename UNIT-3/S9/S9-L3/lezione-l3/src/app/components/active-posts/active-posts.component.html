@@ -5,7 +5,7 @@
       <h3>{{ post.title }}</h3>
       <p>{{ post.body }}</p>
       <span *ngFor="let tag of post.tags">
-        <p>#{{ tag }}</p>
+        <p class="text-black fw-bold">#{{ tag }}</p>
       </span>
     </span>
   </div>
