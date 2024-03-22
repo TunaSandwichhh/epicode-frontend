@@ -1,1 +1,45 @@
-<p>audi-page works!</p>
+<div class="container mt-1">
+  <div class="row">
+    <div class="col-6">
+      <img
+        src="https://listcarbrands.com/wp-content/uploads/2015/10/Audi-Logo-600x338.png"
+        alt="Audi logo"
+        class="img-fluid w-50"
+      />
+    </div>
+    <div class="col-6 bg-dark-subtle">
+      <h2>Le nostre auto Audi</h2>
+    </div>
+  </div>
+
+  <div class="row mt-5 mb-5">
+    <div class="col-12 mb-4" *ngFor="let car of cars">
+      <div
+        class="card border-3 {{
+          car.available ? 'border-success' : 'border-danger'
+        }}"
+      >
+        <img
+          src="https://www.kimballstock.com/pix/car/p/{{ car.modelImage }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body {{ car.available ? 'bg-success' : 'bg-danger' }}">
+          <h5 class="card-title fs-3">{{ car.model }}</h5>
+
+          <div class="col-12 d-flex mb-2">
+            <p class="m-0 me-2 bg-primary text-light p-1 rounded-3 fs-5">
+              ANNO: {{ car.year }}
+            </p>
+            <p class="m-0 me-2 bg-primary text-light p-1 rounded-3 fs-5">
+              PREZZO: {{ car.price }}
+            </p>
+            <p class="m-0 bg-primary text-light p-1 rounded-3 fs-5">
+              PRONTA CONSEGNA: {{ car.available ? "SI" : "NO" }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
