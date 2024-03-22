@@ -16,10 +16,7 @@ export class FiatPageComponent {
   async getFiatCars(): Promise<Car[]> {
     const response = await fetch('../../../assets/db.json');
     const data = (await response.json()) as Car[];
-    return this.shuffleArray(data.filter((car) => car.brand === 'Fiat')).slice(
-      0,
-      2
-    );
+    return this.shuffleArray(data.filter((car) => car.brand === 'Fiat'));
   }
 
   shuffleArray(array: Car[]): Car[] {
