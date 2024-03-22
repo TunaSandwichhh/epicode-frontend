@@ -1,0 +1,86 @@
+<div class="container mt-3 mb-4">
+  <div class="row bg-dark-subtle text-center">
+    <div class="col-12">
+      <img src="../../../assets/logo.png" alt="Autorent logo" />
+    </div>
+    <div class="col-12">
+      <h1>Il tuo autosalone di fiducia</h1>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-12">
+      <h3>I nostri marchi</h3>
+    </div>
+    <div class="col d-flex">
+      <div class="4">
+        <img
+          src="https://listcarbrands.com/wp-content/uploads/2016/02/Logo-Fiat-600x338.png"
+          alt="Fiat Logo"
+          class="img-fluid w-50"
+        />
+      </div>
+      <div class="4">
+        <img
+          src="https://listcarbrands.com/wp-content/uploads/2016/03/Ford-Logo-600x338.png"
+          alt="Ford logo"
+          class="img-fluid w-50"
+        />
+      </div>
+      <div class="4">
+        <img
+          src="https://listcarbrands.com/wp-content/uploads/2015/10/Audi-Logo-600x338.png"
+          alt="Audi logo"
+          class="img-fluid w-50"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center justify-content-evenly">
+    <h3>Auto in evidenza</h3>
+    <div class="col-3" *ngFor="let car of cars">
+      <div
+        class="card border-3 {{
+          car.available ? 'border-success' : 'border-danger'
+        }}"
+        style="width: 18rem"
+      >
+        <img
+          src="https://www.kimballstock.com/pix/car/p/{{ car.modelImage }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div
+          class="card-body {{
+            car.available ? 'bg-success' : 'bg-danger'
+          }} text-center"
+        >
+          <h5 class="card-title">{{ car.model }}</h5>
+
+          <div class="car-infos d-flex flex-column align-items-center">
+            <div class="col-12 d-flex justify-content-evenly mb-2">
+              <p class="m-0 bg-primary text-light p-1 rounded-3">
+                ANNO: {{ car.year }}
+              </p>
+              <p class="m-0 bg-primary text-light p-1 rounded-3">
+                PREZZO: {{ car.price }}
+              </p>
+            </div>
+            <div
+              class="col-9 bg-primary text-light p-1 rounded-3 text-center mb-4"
+            >
+              <p class="m-0">
+                PRONTA CONSEGNA: {{ car.available ? "SI" : "NO" }}
+              </p>
+            </div>
+          </div>
+
+          <a routerLink="/{{ car.brand.toLowerCase() }}" class="btn btn-primary"
+            >Tutte le nostre {{ car.brand }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
